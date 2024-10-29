@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewChangeLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="32dp"
+        android:text="Изменение логина"
+        android:textSize="18sp"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/editTextNewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewChangeLogin"
+        android:layout_marginTop="8dp"
+        android:hint="Введите новый логин"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNewLogin"
+        android:layout_marginTop="24dp"
+        android:text="Изменение пароля"
+        android:textSize="18sp"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewChangePassword"
+        android:layout_marginTop="8dp"
+        android:hint="Введите новый пароль"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewChangeWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNewPassword"
+        android:layout_marginTop="24dp"
+        android:text="Изменение веса"
+        android:textSize="18sp"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/editTextNewWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewChangeWeight"
+        android:layout_marginTop="8dp"
+        android:hint="Введите актуальный вес"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewChangeHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNewWeight"
+        android:layout_marginTop="24dp"
+        android:text="Изменение роста"
+        android:textSize="18sp"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/editTextNewHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewChangeHeight"
+        android:layout_marginTop="8dp"
+        android:hint="Введите актуальный рост"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+    <Button
+        android:id="@+id/buttonSaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNewHeight"
+        android:layout_marginTop="24dp"
+        android:text="Сохранить изменения"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button_background" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSaveChanges"
+        android:layout_marginTop="16dp"
+        android:text="Выйти из аккаунта"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button_background" />
+</RelativeLayout>

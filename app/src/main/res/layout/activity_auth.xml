@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Логин"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="40dp"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/errorColor"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="Invalid username or password"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button_background"
+        android:layout_below="@id/textViewError"
+        android:layout_marginTop="24dp" />
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Нет акаунта? Создайте его!"
+        android:textColor="@color/primaryColor"
+        android:background="@drawable/rounded_border_button"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

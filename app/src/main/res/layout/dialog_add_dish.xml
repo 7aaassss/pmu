@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextDishName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Блюдо" />
+
+    <EditText
+        android:id="@+id/editTextCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Калорийность"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextProtein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Белки"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextFat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Жиры"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextCarbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Углаеводы"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextMealType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Приём пищи(завтрак, обед, ужин)" />
+</LinearLayout>

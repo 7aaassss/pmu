@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <EditText
+        android:id="@+id/editTextNewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите имя пользователя"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="40dp"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Введите вес (кг)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Введите рост (см)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewRegError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/errorColor"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="Что-то пошло не так"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Регистрация"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button_background"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <ImageButton
+        android:id="@+id/buttonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/ac"
+        android:contentDescription="Settings" />
+
+    <TextView
+        android:id="@+id/textViewGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/buttonSettings"
+        android:text="Добро пожаловать в ваш личный калькулятор калорий!"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGreeting"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="Ваш вес: 0 kg"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWeight"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:text="Ваш рост: 0 cm"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeight"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:text="ИМТ: 0"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewRecommendedCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBMI"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:text="Рекомендуемая норма калорий: 0 ккал"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewCalorieCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRecommendedCalories"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="Калорий за сегодня: 0"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/textViewDishes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCalorieCounter"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="Блюда: "
+        android:textColor="@color/textColor" />
+
+    <Button
+        android:id="@+id/buttonAddDish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDishes"
+        android:layout_marginTop="16dp"
+        android:text="+"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button_background" />
+
+</RelativeLayout>
